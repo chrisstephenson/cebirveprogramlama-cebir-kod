@@ -76,7 +76,7 @@
 (define (ekran-sağından-çıkmamış? x)
   true)
 
-; ekranda? : Sayı -> Mantıksal
+; ekranda-görünüyor-mu? : Sayı -> Mantıksal
 ; Koordinat ekranın içinde mi belirler
 
 ;; ÖRNEKler:
