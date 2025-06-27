@@ -24,7 +24,7 @@
    (rename-out (ÖRNEK EXAMPLE))       ;; DrRacket ONLY: comment this line out
    (rename-out (fix-rectangle rectangle))
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-   sq sine cosine tangent
+   yut sq sine cosine tangent
    pick subset? in? list?
    type warn number->image string->image boolean->string boolean->image put-image overlay-at
    clipart/url color->alpha)
@@ -269,4 +269,5 @@
          (local-expand (syntax/loc stx (check-expect x ...))
                        (syntax-local-context)
                        (kernel-form-identifier-list)))]))
+  (define (yut x) (display ""))
   )

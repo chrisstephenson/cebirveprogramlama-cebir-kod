@@ -130,6 +130,8 @@
 (define (çarpıştı-mı? px py cx cy)
   false)
 
+(EXAMPLE (test 7) 7.7)
+(define (test x) (* x 1.1))
 
 
 ; son bir sır:
@@ -151,4 +153,5 @@
                      çarpıştı-mı? ekranda-görünüyor-mu?))
 
 ;; bu satır oyunu otomatik olarak başlatır...
-(play g)
+
+(yut (play g))

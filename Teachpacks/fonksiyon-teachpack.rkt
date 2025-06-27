@@ -8,7 +8,8 @@
          (for-syntax scheme/base))
 (provide ÖRNEK)
 (provide (rename-out [ÖRNEK EXAMPLE]))
-(provide circle) 
+(provide circle)
+(provide yut)
 
 
 (provide-higher-order-primitive başlat (rocket-height))
@@ -16,8 +17,7 @@
 (provide-higher-order-primitive grafik (rocket-height))
 (provide-higher-order-primitive hepsi (rocket-height))
 
-
-
+(define (yut x) (display ""))
 ;(provide start space2 graph everything fibonacci factorial)
 
 ; dimensions: 

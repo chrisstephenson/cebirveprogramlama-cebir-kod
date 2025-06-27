@@ -2,9 +2,9 @@
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname Cebir) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require "Teachpacks/fonksiyon-teachpack.rkt")
-;; should have the graphivc teachpack as well
+;; should have the graphic teachpack as well
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; #1 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Giren değeri beş artan bir fankiyon
+;; Giren değeri beş artan bir fonksiyon
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; #2 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
