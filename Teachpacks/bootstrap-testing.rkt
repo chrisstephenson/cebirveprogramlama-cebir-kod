@@ -34,8 +34,8 @@
 	     observed-expr lineno
 	     expected-expr expected-value
 	     observed-value)))))
- 
- (test-silence #t)
+ ; set #f cs 2025-06-28
+ (test-silence #f)
  
  (require (for-syntax syntax/kerncase))
  (require (for-syntax syntax/stx))

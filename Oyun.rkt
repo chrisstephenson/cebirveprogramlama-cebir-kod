@@ -130,8 +130,8 @@
 (define (çarpıştı-mı? px py cx cy)
   false)
 
-(EXAMPLE (test 7) 7.7)
-(define (test x) (* x 1.1))
+(ÖRNEK (sqrt 9) 3)
+(ÖRNEK (sqrt 7) (sqrt 7.000001))
 
 
 ; son bir sır:

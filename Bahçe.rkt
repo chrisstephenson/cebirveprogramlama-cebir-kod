@@ -68,7 +68,7 @@
 
 ;;;; Animasyon otomatik olarak başlar
 ;;;; Kelebeği hareket ettirmek için ok tuşlarını kullan!
-(start güvende-mi? bahçe kuyu kelebek kuyu-x kuyu-y kelebek-ilk-x kelebek-ilk-y)
+(yut (start güvende-mi? bahçe kuyu kelebek kuyu-x kuyu-y kelebek-ilk-x kelebek-ilk-y))
 
 
 

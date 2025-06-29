@@ -17,11 +17,9 @@
                          blank))
 
 (ÖRNEK (kare 2) 4)
-(ÖRNEK (kare -2) 5)
+(ÖRNEK (kare -2) 4)
 (define (kare x)
   (* x x))
-(define (küp x)
-  (* x x x))
 
 
 

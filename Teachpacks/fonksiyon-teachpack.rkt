@@ -271,19 +271,23 @@
 (define (rocket-height x) (* 7 x))
 
 
-;; a `test' macro that is a synonym for `check-expect', catches expansion
-;; errors and pretends that they come from `test'.
-(require (for-syntax syntax/kerncase))
-(define-syntax (ÖRNEK stx)
-  (syntax-case stx ()
-    [(_ x ...)
-     (with-handlers ([exn? (lambda (e)
-                             (raise (make-exn
-                                     (regexp-replace*
-                                      #rx"check-expect"
-                                      (exn-message e)
-                                      "test")
-                                     (exn-continuation-marks e))))])
-       (local-expand (syntax/loc stx (check-expect x ...))
-                     (syntax-local-context)
-                     (kernel-form-identifier-list)))]))
+;; ;; a `test' macro that is a synonym for `check-expect', catches expansion
+;; ;; errors and pretends that they come from `test'.
+;; (require (for-syntax syntax/kerncase))
+;; (define-syntax (ÖRNEK stx)
+;;   (syntax-case stx ()
+;;     [(_ x ...)
+;;      (with-handlers ([exn? (lambda (e)
+;;                              (raise (make-exn
+;;                                      (regexp-replace*
+;;                                       #rx"check-expect"
+;;                                       (exn-message e)
+;;                                       "test")
+;;                                      (exn-continuation-marks e))))])
+;;        (local-expand (syntax/loc stx (check-expect x ...))
+;;                      (syntax-local-context)
+;;                      (kernel-form-identifier-list)))]))
+
+(define-syntax-rule (ÖRNEK a b)
+  (check-within a b 0.001))
+
