@@ -1,6 +1,4 @@
-;; The first three lines of this file were inserted by DrRacket. They record metadata
-;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-beginner-reader.ss" "lang")((modname Bahçe) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#lang racket
 (require "Teachpacks/bahce-teachpack.rkt")
 
 ; gerçekten yazdığın kodu test etmek istiyorsan - random-imajler? true yap....
@@ -66,9 +64,9 @@
 (define (güvende-mi? x y)
   (bahçe-içinde-mi? x y))
 
-;;;; Animasyon otomatik olarak başlar
+;;;; Animasyon başlatmak için (go) alttaki pencereye yaz
 ;;;; Kelebeği hareket ettirmek için ok tuşlarını kullan!
-(yut (start güvende-mi? bahçe kuyu kelebek kuyu-x kuyu-y kelebek-ilk-x kelebek-ilk-y))
+(define (go) (yut (start güvende-mi? bahçe kuyu kelebek kuyu-x kuyu-y kelebek-ilk-x kelebek-ilk-y)))
 
 
 

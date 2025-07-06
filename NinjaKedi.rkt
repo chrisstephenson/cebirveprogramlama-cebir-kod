@@ -1,6 +1,4 @@
-;; The first three lines of this file were inserted by DrRacket. They record metadata
-;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-beginner-reader.ss" "lang")((modname NinjaKedi) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#lang racket
 (require 2htdp/image)
 (require 2htdp/universe)
 
@@ -159,7 +157,8 @@
   (and (collide? (world-player w) (world-thing1 w))
        (> (player-y (world-player w)) 350))) 
 
+((lambda (x) (display ""))
 (big-bang START
           (on-tick update-world .05)
           (on-draw draw-world)
-          (on-key keypress))
+          (on-key keypress)))

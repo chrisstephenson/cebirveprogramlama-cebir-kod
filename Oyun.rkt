@@ -122,7 +122,7 @@
 (define (mesafe px py cx cy)
   0)
 
-; çarğıştı? : Sayı Sayı Sayı Sayı -> Mantıksal
+; çarpıştı-mı? : Sayı Sayı Sayı Sayı -> Mantıksal
 ; Ne kadar yakın yeterince yakındır?
 ; Oyuncunun x ve y koordinatları ve bir nesnenin x ve y koordinatları verilmiş
 ; Aralarındaki mesafeye bakıp çarpışıp çarpışmadıklarına karar veririz.
@@ -130,8 +130,6 @@
 (define (çarpıştı-mı? px py cx cy)
   false)
 
-(ÖRNEK (sqrt 9) 3)
-(ÖRNEK (sqrt 7) (sqrt 7.000001))
 
 
 ; son bir sır:
@@ -153,5 +151,5 @@
                      çarpıştı-mı? ekranda-görünüyor-mu?))
 
 ;; bu satır oyunu otomatik olarak başlatır...
+(define (go) (yut (play g)))
 
-(yut (play g))

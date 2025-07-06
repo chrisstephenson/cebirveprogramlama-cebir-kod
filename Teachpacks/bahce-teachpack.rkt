@@ -86,6 +86,7 @@
 (define (move w key)
   (let ((step 5))
     (cond
+      [(>= (world-burn w) 0) w]
       [(not (string? key)) w]
       [(string=? key "left") 
        (change-world w (- (world-x w) step) (world-y w))]
