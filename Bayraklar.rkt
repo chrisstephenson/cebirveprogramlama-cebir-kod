@@ -1,4 +1,6 @@
-#lang racket
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname Bayraklar) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
 (require "Teachpacks/bootstrap-teachpack.rkt")
 
 ; 1) Kırmızı noktayla başlayalım,  radius 50
