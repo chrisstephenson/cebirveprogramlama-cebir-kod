@@ -3,8 +3,9 @@
 #reader(lib "htdp-advanced-reader.ss" "lang")((modname Roket) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
 (require "Teachpacks/fonksiyon-teachpack.ss")
 
-(define (roket-yüksekliği saniye) 0)
-
+; roket-yüksekliği fonksiyonunun bütün tasarım reçetesi buraya yazılıyor
+; sözleşme, amaç, örnekler, tanım.
+; onay almadan başka bir şey yapma.
 
 
 ;;;; "Run" tıklanınca aşağıdan girilen bu satır roketin uçmasını sağlayacak

@@ -8,7 +8,6 @@
 ;; 0. Oyun başlığı: Oyununuzun adını burada yazın
 (define BAŞLIK "Oyunum")
 (define BAŞLIK-RENGİ "white")
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Görüntüler - tehlike, hedef, ve oyuncu görselleri
 (define (scale-arkaplan bg)

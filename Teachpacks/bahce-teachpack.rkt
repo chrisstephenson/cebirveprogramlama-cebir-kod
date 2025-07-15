@@ -71,6 +71,7 @@
                     (bitmap "teachpack-images/flame_5.gif")
                     (bitmap "teachpack-images/flame_6.gif")
                     (bitmap "teachpack-images/flame_7.gif")
+                    (bitmap "teachpack-images/flame_8.gif")
                     ))
 
 (define-struct world [bahçe kuyu kelebek kuyu-x kuyu-y x y burn])
