@@ -21,6 +21,7 @@
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
    ;(rename-out (EXAMPLE-GREM EXAMPLE))   ;; WeScheme ONLY: comment this line out
    ÖRNEK                              ;; DrRacket ONLY: comment this line out
+   ÖRNEK-YAKIN
    (rename-out (ÖRNEK EXAMPLE))       ;; DrRacket ONLY: comment this line out
    (rename-out (fix-rectangle rectangle))
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -79,7 +80,7 @@
   (define (find-color color-name)
     (color-object->color-struct color-name))
   
-  (define (imgvec-location x y w h)
+  (define (imgvec-location x y w h)ct
     (+ (* y w) x))
   
   (define (imgvec-adjacent-points imgvec loc width height)
@@ -271,8 +272,11 @@
 ;;                        (kernel-form-identifier-list)))]))
 
 
-(define-syntax-rule (ÖRNEK a b)
+(define-syntax-rule (ÖRNEK-YAKIN a b)
   (check-within a b 0.001))
+
+(define-syntax-rule (ÖRNEK a b)
+  (check-expect a b))
 
   
   (define (yut x) (display ""))

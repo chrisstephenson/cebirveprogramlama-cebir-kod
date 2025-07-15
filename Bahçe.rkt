@@ -73,6 +73,10 @@
 (define (güvende-mi? x y)
   (bahçe-içinde-mi? x y))
 
+
+(check-expect false false)
+(ÖRNEK true true)
+
 ;; Animasyon başlatmak için (go) alttaki pencereye yaz
 ;; Kelebeği hareket ettirmek için ok tuşlarını kullan!
 (define (go) (yut (start güvende-mi? bahçe kuyu kelebek kuyu-x kuyu-y kelebek-ilk-x kelebek-ilk-y)))

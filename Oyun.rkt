@@ -148,7 +148,7 @@
                      GİZEMLİ gizemli-güncelle
                      mesafeler-göster çizgi-uzunluğu mesafe
                      çarpıştı-mı? ekranda-görünüyor-mu?))
-
+(ÖRNEK false false)
 ;; bu satır oyunu otomatik olarak başlatır...
 (define (go) (yut (play g)))
 

@@ -2,3 +2,4 @@
 *.rkt~
 *.dep
 *.zo
+*.xcf
