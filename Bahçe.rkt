@@ -74,8 +74,8 @@
   (bahçe-içinde-mi? x y))
 
 
-(check-expect false false)
-(ÖRNEK true true)
+(ÖRNEK false false)
+(ÖRNEK-YAKIN 1 1.0001)
 
 ;; Animasyon başlatmak için (go) alttaki pencereye yaz
 ;; Kelebeği hareket ettirmek için ok tuşlarını kullan!
