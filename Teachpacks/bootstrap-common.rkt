@@ -80,7 +80,7 @@
   (define (find-color color-name)
     (color-object->color-struct color-name))
   
-  (define (imgvec-location x y w h)ct
+  (define (imgvec-location x y w h)
     (+ (* y w) x))
   
   (define (imgvec-adjacent-points imgvec loc width height)
